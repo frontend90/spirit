@@ -14,10 +14,25 @@
 @mixin lat_reg 
   font-family: 'Lato-Regular'
 @font-face 
+  font-family: 'Lato-Bold'
+  src: url(../fonts/Lato-Bold.ttf)
+@mixin lat_bold 
+  font-family: 'Lato-Bold'
+@font-face 
   font-family: 'OpenSans-Regular'
   src: url(../fonts/OpenSans-Regular.ttf)
 @mixin open_reg 
   font-family: 'OpenSans-Regular'
+@font-face 
+  font-family: 'OpenSans-Semibold'
+  src: url(../fonts/OpenSans-Semibold.ttf)
+@mixin open_semi 
+  font-family: 'OpenSans-Semibold'
+@font-face 
+  font-family: 'OpenSans-Light'
+  src: url(../fonts/OpenSans-Light.ttf)
+@mixin open_light
+  font-family: 'OpenSans-Light'
 body 
   color: #5a5a5a
   +lat_reg 
@@ -25,3 +40,4 @@ body
 .container 
   max-width: 1170px 
   margin: 0 auto
+  height: 100%

@@ -1,1 +1,181 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@font-face {
+  font-family: 'fa-brands-400';
+  src: url(../fonts/fa-brands-400.ttf);
+}
+
+@font-face {
+  font-family: 'fa-solid-900';
+  src: url(../fonts/fa-solid-900.ttf);
+}
+
+@font-face {
+  font-family: 'Lato-Regular';
+  src: url(../fonts/Lato-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Lato-Bold';
+  src: url(../fonts/Lato-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'OpenSans-Regular';
+  src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'OpenSans-Semibold';
+  src: url(../fonts/OpenSans-Semibold.ttf);
+}
+
+@font-face {
+  font-family: 'OpenSans-Light';
+  src: url(../fonts/OpenSans-Light.ttf);
+}
+
+body {
+  color: #5a5a5a;
+  font-family: 'Lato-Regular';
+  font-size: 14px;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.header {
+  background: url(../img/header/bg.jpg) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  background-position: center;
+  position: relative;
+}
+
+.header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), color-stop(17%, rgba(0, 0, 0, 0.73)), color-stop(35%, rgba(0, 0, 0, 0.66)), color-stop(62%, rgba(0, 0, 0, 0.55)), to(rgba(0, 0, 0, 0.4)));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.73) 17%, rgba(0, 0, 0, 0.66) 35%, rgba(0, 0, 0, 0.55) 62%, rgba(0, 0, 0, 0.4) 100%);
+}
+
+.header .overlay .header-nav {
+  position: fixed;
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 1170px;
+  z-index: 9999;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+}
+
+.header .overlay .header-nav .logo h2 {
+  text-transform: uppercase;
+  font-family: 'Lato-Bold';
+  font-size: 22px;
+}
+
+.header .overlay .header-nav .logo h2 a {
+  color: #ffffff;
+}
+
+.header .overlay .header-nav .header-menu .burger {
+  display: none;
+}
+
+.header .overlay .header-nav .header-menu .menu a {
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #ffffff;
+  margin-left: 30px;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+}
+
+.header .overlay .header-nav .header-menu .menu a.active {
+  color: #FCAC45;
+}
+
+.header .overlay .header-nav .header-menu .menu a:first-of-type {
+  margin-left: 0;
+}
+
+.header .overlay .header-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.header .overlay .header-title h3 {
+  text-transform: uppercase;
+  font-size: 36px;
+  font-family: 'OpenSans-Semibold';
+  color: #cfcfcf;
+}
+
+.header .overlay .header-title h3 span {
+  color: #FCAC45;
+}
+
+.header .overlay .header-title p {
+  margin-top: 10px;
+  color: #e3e3e3;
+  font-size: 21px;
+  font-family: 'OpenSans-Light';
+}
+
+.header .overlay .header-title .header-anchor {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 5px;
+}
+
+.header .overlay .header-title .header-anchor a .fas {
+  font-family: 'fa-solid-900';
+  padding: 10px 15px;
+  font-size: 24px;
+  color: #ffffff;
+  border: 2px solid #b4b4b4;
+  border-radius: 50%;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+}
+
+.header .overlay .header-title .header-anchor a .fas:hover {
+  background: #FCAC45;
+  border-color: #FCAC45;
+}
+
+@media screen and (max-width: 1180px) {
+  .container {
+    max-width: 95%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
