@@ -68,9 +68,23 @@ body.no-scroll {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.73) 17%, rgba(0, 0, 0, 0.66) 35%, rgba(0, 0, 0, 0.55) 62%, rgba(0, 0, 0, 0.4) 100%);
 }
 
-.header .overlay .header-nav {
+.header .overlay .top-menu {
   position: fixed;
   padding: 20px 0;
+  width: 100%;
+  background: transparent;
+  top: 0;
+  left: 0;
+  z-index: 9997;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+}
+
+.header .overlay .top-menu.active {
+  background: #222222;
+}
+
+.header .overlay .top-menu .header-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -81,26 +95,24 @@ body.no-scroll {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 1170px;
-  z-index: 9997;
-  -webkit-transition: .3s linear;
-  transition: .3s linear;
+  margin: auto;
 }
 
-.header .overlay .header-nav .logo h2 {
+.header .overlay .top-menu .header-nav .logo h2 {
   text-transform: uppercase;
   font-family: 'Lato-Bold';
   font-size: 22px;
 }
 
-.header .overlay .header-nav .logo h2 a {
+.header .overlay .top-menu .header-nav .logo h2 a {
   color: #ffffff;
 }
 
-.header .overlay .header-nav .header-menu .burger {
+.header .overlay .top-menu .header-nav .header-menu .burger {
   display: none;
 }
 
-.header .overlay .header-nav .header-menu .menu a {
+.header .overlay .top-menu .header-nav .header-menu .menu a {
   text-transform: uppercase;
   font-size: 12px;
   letter-spacing: 1px;
@@ -110,11 +122,11 @@ body.no-scroll {
   transition: .3s linear;
 }
 
-.header .overlay .header-nav .header-menu .menu a.active {
+.header .overlay .top-menu .header-nav .header-menu .menu a.active {
   color: #FCAC45;
 }
 
-.header .overlay .header-nav .header-menu .menu a:first-of-type {
+.header .overlay .top-menu .header-nav .header-menu .menu a:first-of-type {
   margin-left: 0;
 }
 
@@ -283,7 +295,7 @@ body.no-scroll {
 }
 
 @media screen and (max-width: 1200px) {
-  .header .overlay .header-nav {
+  .header .overlay .top-menu .header-nav {
     width: 95%;
   }
 }
@@ -310,7 +322,7 @@ body.no-scroll {
 }
 
 @media screen and (max-width: 800px) {
-  .header .overlay .header-nav .header-menu .burger {
+  .header .overlay .top-menu .header-nav .header-menu .burger {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -326,26 +338,26 @@ body.no-scroll {
     cursor: pointer;
     z-index: 9999;
   }
-  .header .overlay .header-nav .header-menu .burger.active span {
+  .header .overlay .top-menu .header-nav .header-menu .burger.active span {
     display: none;
   }
-  .header .overlay .header-nav .header-menu .burger.active::before {
+  .header .overlay .top-menu .header-nav .header-menu .burger.active::before {
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg);
   }
-  .header .overlay .header-nav .header-menu .burger.active::after {
+  .header .overlay .top-menu .header-nav .header-menu .burger.active::after {
     top: 0;
     -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg);
   }
-  .header .overlay .header-nav .header-menu .burger span {
+  .header .overlay .top-menu .header-nav .header-menu .burger span {
     background: #ffffff;
     height: 3px;
     width: 20px;
     -webkit-transition: .3s linear;
     transition: .3s linear;
   }
-  .header .overlay .header-nav .header-menu .burger::before {
+  .header .overlay .top-menu .header-nav .header-menu .burger::before {
     content: '';
     position: absolute;
     width: 30px;
@@ -355,7 +367,7 @@ body.no-scroll {
     -webkit-transition: .3s linear;
     transition: .3s linear;
   }
-  .header .overlay .header-nav .header-menu .burger::after {
+  .header .overlay .top-menu .header-nav .header-menu .burger::after {
     content: '';
     position: absolute;
     width: 30px;
@@ -365,7 +377,7 @@ body.no-scroll {
     -webkit-transition: .3s linear;
     transition: .3s linear;
   }
-  .header .overlay .header-nav .header-menu .menu {
+  .header .overlay .top-menu .header-nav .header-menu .menu {
     position: fixed;
     top: 0;
     left: 0;
@@ -377,14 +389,14 @@ body.no-scroll {
     padding-top: 50px;
     display: none;
   }
-  .header .overlay .header-nav .header-menu .menu a {
+  .header .overlay .top-menu .header-nav .header-menu .menu a {
     display: block;
     margin: 0;
     color: #ffffff;
     font-size: 15px;
     margin: 40px 0;
   }
-  .header .overlay .header-nav .header-menu .menu.show {
+  .header .overlay .top-menu .header-nav .header-menu .menu.show {
     display: block;
   }
 }

@@ -28,3 +28,15 @@ $('.menu a').click(function () {
   $('.burger').removeClass('active');
   $('body').removeClass('no-scroll');
 });
+
+/****************      scroll top     ***************/
+$(window).scroll(function () {
+
+  var wScroll = $(this).scrollTop();
+
+  if (wScroll > 20) {
+    $('.top-menu').addClass('active');
+  } else {
+    $('.top-menu').removeClass('active');
+  };
+});
