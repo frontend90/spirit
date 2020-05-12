@@ -40,3 +40,13 @@ $(window).scroll(function () {
     $('.top-menu').removeClass('active');
   };
 });
+
+/*****   плавный скролл с активными блоками   ******/
+$('.navigation').singlePageNav({
+  currentClass: 'active',
+  changeHash: true,
+  scrollSpeed: 10000,
+  offset: 0,
+  filter: ':not(.external)',
+  easing: 'swing',
+});
