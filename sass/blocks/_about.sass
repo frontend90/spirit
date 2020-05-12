@@ -1,0 +1,63 @@
+.about 
+  padding: 80px 0 
+  & .about-wrap 
+    display: flex 
+    justify-content: space-between
+    & .block 
+      max-width: 585px 
+      & .title 
+        & h5 
+          text-transform: uppercase
+          font-size: 18px 
+          +open_semi 
+        & h4 
+          text-transform: uppercase
+          font-size: 30px 
+          +open_light
+          position: relative
+          padding-bottom: 20px 
+          &::before
+            content: ''
+            position: absolute
+            left: 0
+            bottom: 0
+            width: 60px 
+            height: 4px 
+            background: #fcac45
+          & strong
+            +open_semi 
+        & p 
+          margin-top: 30px 
+          font-size: 16px 
+          line-height: 24px 
+          +open_reg 
+      & .content 
+        margin-top: 30px 
+        & p 
+          font-size: 16px 
+          line-height: 30px 
+          +open_reg 
+          position: relative
+          padding-left: 25px 
+          &::before
+            content: ''
+            position: absolute
+            left: 0
+            width: 13px 
+            height: 13px 
+            border-radius: 50%
+            border: 2px solid #5a5a5a
+            top: 50%
+            transform: translateY(-50%)
+          &::after
+            content: ''
+            position: absolute
+            width: 5px 
+            height: 5px
+            border-radius: 50% 
+            background: #5a5a5a
+            left: calc((13px/2) - (5px/2))
+            top: 50%
+            transform: translateY(-50%)
+          & span 
+            font-style: italic
