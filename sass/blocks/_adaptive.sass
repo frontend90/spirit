@@ -15,6 +15,15 @@
         margin: auto
       & .right 
         margin-top: 100px 
+@media screen and ( max-width: 1140px )
+  .services 
+    & .services-wrap 
+      flex-wrap: wrap
+      justify-content: space-around
+      margin-top: 20px 
+      & .block 
+        flex-basis: 40%
+        margin-top: 50px 
 @media screen and ( max-width: 800px )
   .header 
     & .overlay 
@@ -77,6 +86,14 @@
                 margin: 40px 0
               &.show 
                 display: block 
+@media screen and ( max-width: 630px )
+  .services 
+    & .services-wrap 
+      justify-content: center
+      flex-direction: column 
+      & .block 
+        margin: 50px auto 0 
+        width: 50%
 @media screen and ( max-width: 540px )
   .about 
     & .about-wrap 
@@ -84,6 +101,11 @@
         display: none 
       & .right 
         margin-top: 0
+@media screen and ( max-width: 460px )
+  .services 
+    & .title 
+      & h5 
+        font-size: 20px 
 @media screen and ( max-width: 420px )
   .header 
     & .overlay 
