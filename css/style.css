@@ -229,6 +229,7 @@ body.no-scroll {
   font-family: 'OpenSans-Light';
   position: relative;
   padding-bottom: 20px;
+  font-weight: lighter;
 }
 
 .about .about-wrap .block .title h4::before {
@@ -292,6 +293,165 @@ body.no-scroll {
 
 .about .about-wrap .block .content p span {
   font-style: italic;
+}
+
+.team {
+  background: url(../img/team/bg.jpg) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  position: relative;
+  height: 635px;
+}
+
+.team .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), color-stop(17%, rgba(0, 0, 0, 0.73)), color-stop(35%, rgba(0, 0, 0, 0.66)), color-stop(62%, rgba(0, 0, 0, 0.55)), to(rgba(0, 0, 0, 0.4)));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.73) 17%, rgba(0, 0, 0, 0.66) 35%, rgba(0, 0, 0, 0.55) 62%, rgba(0, 0, 0, 0.4) 100%);
+  padding: 80px 0;
+}
+
+.team .overlay .title {
+  text-align: center;
+}
+
+.team .overlay .title h5 {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-family: 'OpenSans-Light';
+  color: #ffffff;
+  position: relative;
+  font-weight: lighter;
+}
+
+.team .overlay .title h5 strong {
+  font-family: 'OpenSans-Semibold';
+}
+
+.team .overlay .title h5::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: -20px;
+  width: 60px;
+  height: 4px;
+  background: #fcac45;
+}
+
+.team .overlay .title h5::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: -34px;
+  width: 40px;
+  height: 4px;
+  background: rgba(252, 172, 69, 0.34);
+}
+
+.team .overlay .team-slider {
+  margin-top: 75px;
+}
+
+.team .overlay .team-slider .slick-list {
+  overflow: hidden;
+}
+
+.team .overlay .team-slider .slick-list .slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.team .overlay .team-slider .slick-list .slick-track .team-slider-block {
+  padding: 4px;
+  margin: 0 10px;
+  text-align: center;
+}
+
+.team .overlay .team-slider .slick-list .slick-track .team-slider-block:hover .img img {
+  border-color: #fcac45;
+}
+
+.team .overlay .team-slider .slick-list .slick-track .team-slider-block .img {
+  width: 120px;
+  height: 120px;
+  margin: auto;
+}
+
+.team .overlay .team-slider .slick-list .slick-track .team-slider-block .img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 4px solid transparent;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+}
+
+.team .overlay .team-slider .slick-list .slick-track .team-slider-block .content {
+  margin-top: 20px;
+  padding: 10px;
+  color: #f2f2f2;
+}
+
+.team .overlay .team-slider .slick-list .slick-track .team-slider-block .content h5 {
+  font-size: 18px;
+  font-family: 'OpenSans-Semibold';
+}
+
+.team .overlay .team-slider .slick-list .slick-track .team-slider-block .content h6 {
+  margin-top: 10px;
+  font-family: 'OpenSans-Regular';
+  font-size: 14px;
+}
+
+.team .overlay .team-slider .slick-list .slick-track .team-slider-block .content p {
+  margin-top: 10px;
+  line-height: 1.42;
+  font-family: 'OpenSans-Regular';
+}
+
+.team .overlay .team-slider .slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 25px;
+}
+
+.team .overlay .team-slider .slick-dots li {
+  list-style: none;
+  width: 10px;
+  height: 10px;
+  background: #ffffff;
+  margin: 0 5px;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+  cursor: pointer;
+}
+
+.team .overlay .team-slider .slick-dots li:hover {
+  background: #fcac45;
+}
+
+.team .overlay .team-slider .slick-dots li button {
+  font-size: 0;
+}
+
+.team .overlay .team-slider .slick-dots .slick-active {
+  background: #fcac45;
 }
 
 @media screen and (max-width: 1200px) {
