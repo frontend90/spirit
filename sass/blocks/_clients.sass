@@ -1,0 +1,75 @@
+.clients
+  background: url(../img/clients/bg.jpg) no-repeat 
+  background-position: center 
+  background-attachment: fixed
+  background-size: cover 
+  position: relative
+  height: 425px 
+  & .overlay 
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: linear-gradient(to bottom, rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%)
+    padding: 80px 0 
+    & .title 
+      text-align: center
+      color: #f2f2f2
+      & h5 
+        text-transform: uppercase
+        +open_light 
+        font-size: 30px 
+        font-weight: lighter
+        position: relative
+        &::before
+          content: ''
+          position: absolute
+          left: 50%
+          transform: translateX(-50%)
+          bottom: -20px 
+          width: 60px 
+          height: 4px 
+          background: #fcac45
+        &::after
+          content: ''
+          position: absolute
+          left: 50%
+          transform: translateX(-50%)
+          bottom: -34px 
+          width: 40px 
+          height: 4px
+          background: rgba(252, 172, 69, 0.34) 
+        & strong 
+          +open_semi 
+    & .clients-slider
+      margin-top: 70px 
+      & .slick-list 
+        overflow: hidden
+        & .slick-track 
+          display: flex 
+          & .clients-slider-block 
+            display: flex 
+            align-items: center
+            justify-content: center
+      & .slick-dots 
+        display: flex 
+        align-items: center
+        justify-content: center
+        margin-top: 25px 
+        & li 
+          list-style: none 
+          width: 10px 
+          height: 10px 
+          background: #ffffff
+          margin: 0 5px 
+          transition: .3s linear 
+          cursor: pointer
+          &:hover
+            background: #fcac45
+          & button
+            font-size: 0 
+        & .slick-active 
+          background: #fcac45
+

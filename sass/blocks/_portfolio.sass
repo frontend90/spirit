@@ -1,0 +1,136 @@
+.portfolio
+  padding: 80px 0 
+  & .title 
+    text-align: center
+    & h5 
+      text-transform: uppercase
+      +open_light 
+      font-weight: lighter
+      font-size: 30px 
+      position: relative
+      &::before
+        content: ''
+        position: absolute
+        left: 50%
+        transform: translateX(-50%)
+        bottom: -20px 
+        width: 60px 
+        height: 4px 
+        background: #fcac45
+      &::after
+        content: ''
+        position: absolute
+        left: 50%
+        transform: translateX(-50%)
+        bottom: -34px 
+        width: 40px 
+        height: 4px
+        background: rgba(252, 172, 69, 0.34) 
+      & strong 
+        +open_semi 
+    & p
+      margin-top: 65px  
+      font-size: 85%
+      font-style: italic
+      line-height: 1.42 
+  & .portfolio-nav
+    margin-top: 80px 
+    display: flex 
+    align-items: center
+    justify-content: space-between
+    & .block 
+      & p 
+        text-transform: uppercase
+        font-size: 18px 
+        +open_semi 
+      & a 
+        color: #222222
+        position: relative
+        padding-left: 20px 
+        padding-right: 20px 
+        transition: .3s linear 
+        &:first-of-type
+          padding-left: 0
+        &:last-of-type
+          padding-right: 0
+          &::before
+            display: none 
+        &::before
+          content: ''
+          position: absolute
+          height: 100%
+          width: 1px 
+          background: #222222
+          top: 50%
+          transform: translateY(-50%)
+          right: 0
+        &.active 
+          +lat_bold 
+  & .portfolio-wrap
+    display: flex 
+    flex-wrap: wrap
+    justify-content: space-between
+    & .card 
+      width: 260px 
+      height: 260px 
+      position: relative
+      overflow: hidden
+      margin-top: 30px 
+      &:hover .overlay 
+        opacity: 1
+        visibility: visible
+      &:hover .overlay .content h6 
+        transform: translateY(0)
+      &:hover .overlay .content .icon 
+        transform: translateY(100%)
+      & img 
+        width: 100%
+        height: 100%
+      & .overlay 
+        position: absolute
+        top: 0
+        left: 0
+        background: rgba(#000000,.66)
+        width: 100%
+        height: 100%
+        opacity: 0
+        visibility: hidden
+        transition: .3s linear 
+        & .content
+          position: absolute 
+          top: 50%
+          left: 50%
+          transform: translate(-50%,-50%)
+          color: #f2f2f2
+          text-align: center
+          & h6 
+            text-transform: uppercase
+            font-size: 18px 
+            +open_semi 
+            transition: .3s linear 
+            transform: translateY(100%)
+          & p 
+            margin-top: 10px
+            font-size: 85%
+          & .icon 
+            display: flex 
+            justify-content: center
+            transition: .3s linear 
+            transform: translateY(0)
+            & a 
+              & .fas 
+                +solid 
+                width: 30px 
+                height: 30px 
+                border-radius: 50%
+                border: 1px solid #FCAC45
+                font-size: 20px 
+                display: flex 
+                align-items: center
+                justify-content: center
+                color: #FCAC45
+
+
+
+
+

@@ -1,21 +1,3 @@
-/*********************  плавный скролл    ***************/
-$(document).ready(function () {
-  $('a[href^="#"]').click(function () {
-    elementClick = $(this).attr("href");
-    destination = $(elementClick).offset().top;
-    if ($.browser) {
-      $('body').animate({
-        scrollTop: destination
-      }, 1000);
-    } else {
-      $('html').animate({
-        scrollTop: destination
-      }, 1000);
-    }
-    return false;
-  });
-});
-
 /************    burger      *************/
 $('.burger').click(function () {
   $('.burger').toggleClass('active');
@@ -81,29 +63,51 @@ $('.team-slider').slick({
   ]
 });
 
-/*$(window).load(function() {
-    var $container = $('#lightbox');
-    $container.isotope({
-        filter: '*',
-        animationOptions: {
-            duration: 750,
-            easing: 'linear',
-            queue: false
-        }
-    });
-    $('.cat a').click(function() {
-        $('.cat .active').removeClass('active');
-        $(this).addClass('active');
-        var selector = $(this).attr('data-filter');
-        $container.isotope({
-            filter: selector,
-            animationOptions: {
-                duration: 750,
-                easing: 'linear',
-                queue: false
-            }
-        });
-        return false;
-    });
+/*******    clients slick    **************/
+$('.clients-slider').slick({
+  slidesToShow: 5,
+  slidesToScroll: 2,
+  dots: true,
+  arrows: false,
+  responsive: [{
+      breakpoint: 1000,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 750,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 550,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
+});
 
-});*/
+/*********************  portfolio filter   ***************/
+$(function () {
+  $('.portfolio-nav .block a').click(function (event) {
+    event.preventDefault();
+    var get_id = this.id;
+    var get_current = $('.card.' + get_id);
+    $('.card').hide();
+    get_current.show();
+  });
+  $('#all').click(function () {
+    $('.card').show();
+  });
+});
+
+$('.portfolio-nav a').click(function () {
+  $('.portfolio-nav a').removeClass('active');
+  $(this).addClass('active');
+});

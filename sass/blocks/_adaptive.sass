@@ -24,6 +24,18 @@
       & .block 
         flex-basis: 40%
         margin-top: 50px 
+@media screen and ( max-width: 1120px )
+  .portfolio
+    & .portfolio-wrap 
+      justify-content: space-between
+      & .card 
+        flex-basis: 30%
+@media screen and ( max-width: 940px )
+  .portfolio
+    & .portfolio-wrap 
+      justify-content: space-around
+      & .card 
+        flex-basis: 40%
 @media screen and ( max-width: 800px )
   .header 
     & .overlay 
@@ -86,6 +98,19 @@
                 margin: 40px 0
               &.show 
                 display: block 
+@media screen and ( max-width: 670px )
+  .portfolio 
+    & .portfolio-nav 
+      justify-content: center
+      & .left 
+        display: none 
+@media screen and ( max-width: 650px )
+  .portfolio
+    & .portfolio-wrap 
+      flex-direction: column 
+      & .card 
+        width: 60%
+        margin: 30px auto 0 
 @media screen and ( max-width: 630px )
   .services 
     & .services-wrap 
@@ -101,6 +126,22 @@
         display: none 
       & .right 
         margin-top: 0
+@media screen and ( max-width: 500px )
+  .portfolio 
+    & .portfolio-nav 
+      & .right 
+        text-align: center
+        & a 
+          display: block 
+          padding: 0
+          margin-top: 10px
+          &:first-of-type
+            margin-top: 0 
+          &::before
+            display: none 
+    & .portfolio-wrap 
+      & .card 
+        width: 90%
 @media screen and ( max-width: 460px )
   .services 
     & .title 
@@ -134,3 +175,9 @@
         & .title 
           & h4 
             font-size: 25px 
+@media screen and ( max-width: 350px )
+  .clients 
+    & .overlay
+      & .title 
+        & h5 
+          font-size: 25px 
