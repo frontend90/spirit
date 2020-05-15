@@ -1045,6 +1045,202 @@ body.no-scroll {
   background: #fcac45;
 }
 
+.contact {
+  padding: 80px 0;
+}
+
+.contact .title {
+  text-align: center;
+}
+
+.contact .title h5 {
+  text-transform: uppercase;
+  font-family: 'OpenSans-Light';
+  font-weight: lighter;
+  font-size: 30px;
+  position: relative;
+}
+
+.contact .title h5::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: -20px;
+  width: 60px;
+  height: 4px;
+  background: #fcac45;
+}
+
+.contact .title h5::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: -34px;
+  width: 40px;
+  height: 4px;
+  background: rgba(252, 172, 69, 0.34);
+}
+
+.contact .title h5 strong {
+  font-family: 'OpenSans-Semibold';
+}
+
+.contact .title p {
+  margin: 60px auto 0;
+  font-size: 85%;
+  font-style: italic;
+  line-height: 1.42;
+  max-width: 800px;
+}
+
+.contact .form {
+  margin: 30px auto 0;
+  max-width: 800px;
+}
+
+.contact .form form .top-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 800px;
+}
+
+.contact .form form .top-input .block {
+  width: 48%;
+  position: relative;
+}
+
+.contact .form form .top-input .block input {
+  border: 1px solid #cccccc;
+  width: 100%;
+  padding: 6px 12px;
+  color: #555555;
+  border-radius: 2px;
+  margin-top: 5px;
+}
+
+.contact .form form .top-input .email-input::before {
+  content: 'Email address';
+  font-size: 12px;
+  font-family: 'OpenSans-Regular';
+}
+
+.contact .form form .top-input .password-input::before {
+  content: 'Password';
+  font-size: 12px;
+  font-family: 'OpenSans-Regular';
+}
+
+.contact .form form .block {
+  max-width: 800px;
+  margin-top: 15px;
+  position: relative;
+}
+
+.contact .form form .block textarea {
+  border: 1px solid #cccccc;
+  width: 100%;
+  padding: 6px 12px;
+  color: #555555;
+  border-radius: 2px;
+  height: 75px;
+  margin-top: 5px;
+}
+
+.contact .form form .textarea::before {
+  content: 'Message';
+  font-size: 12px;
+  font-family: 'OpenSans-Regular';
+}
+
+.contact .form form .btn {
+  margin-top: 15px;
+  text-align: right;
+}
+
+.contact .form form .btn button {
+  background: #FCAC45;
+  padding: 10px 40px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-family: 'OpenSans-Regular';
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+}
+
+.contact .form form .btn button:hover {
+  opacity: .7;
+}
+
+.footer {
+  padding: 20px 0;
+  background: #222222;
+}
+
+.footer .footer-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer .footer-wrap .block p {
+  font-size: 12px;
+  font-family: 'OpenSans-Regular';
+  color: #ffffff;
+}
+
+.footer .footer-wrap .block p a {
+  color: #FCAC45;
+}
+
+.footer .footer-wrap .block a {
+  margin-left: 10px;
+}
+
+.footer .footer-wrap .block a:first-of-type {
+  margin-left: 0;
+}
+
+.footer .footer-wrap .block a .fab {
+  font-family: 'fa-brands-400';
+  width: 30px;
+  height: 30px;
+  font-size: 18px;
+  border: 2px solid #8c8c8c;
+  border-radius: 50%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #8c8c8c;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+}
+
+.footer .footer-wrap .block a .fab:hover {
+  background: #FCAC45;
+  border-color: #FCAC45;
+  color: #ffffff;
+}
+
 @media screen and (max-width: 1200px) {
   .header .overlay .top-menu .header-nav {
     width: 95%;
@@ -1188,6 +1384,21 @@ body.no-scroll {
   .header .overlay .top-menu .header-nav .header-menu .menu.show {
     display: block;
   }
+  .footer .footer-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer .footer-wrap .block p {
+    text-align: center;
+  }
+  .footer .footer-wrap .social {
+    margin-top: 20px;
+  }
 }
 
 @media screen and (max-width: 670px) {
@@ -1211,6 +1422,29 @@ body.no-scroll {
   .portfolio .portfolio-wrap .card {
     width: 60%;
     margin: 30px auto 0;
+  }
+  .contact .form form .top-input {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact .form form .top-input .block {
+    margin: auto;
+    width: 90%;
+  }
+  .contact .form form .top-input .password-input {
+    margin-top: 15px;
+  }
+  .contact .form form .block {
+    max-width: 90%;
+    margin: 15px auto 0;
+  }
+  .contact .form form .btn {
+    text-align: center;
   }
 }
 
@@ -1302,6 +1536,12 @@ body.no-scroll {
 @media screen and (max-width: 350px) {
   .clients .overlay .title h5 {
     font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .testimonials {
+    height: 575px;
   }
 }
 /*# sourceMappingURL=style.css.map */

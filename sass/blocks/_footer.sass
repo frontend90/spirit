@@ -1,0 +1,36 @@
+.footer
+  padding: 20px 0 
+  background: #222222
+  & .footer-wrap 
+    display: flex 
+    align-items: center
+    justify-content: space-between
+    & .block 
+      & p 
+        font-size: 12px 
+        +open_reg
+        color: #ffffff
+        & a 
+          color: #FCAC45
+      & a 
+        margin-left: 10px 
+        &:first-of-type
+          margin-left: 0
+        & .fab
+          +brand  
+          width: 30px 
+          height: 30px 
+          font-size: 18px 
+          border: 2px solid #8c8c8c
+          border-radius: 50%
+          display: inline-flex
+          align-items: center
+          justify-content: center
+          color: #8c8c8c 
+          transition: .3s linear 
+          &:hover
+            background: #FCAC45
+            border-color: #FCAC45
+            color: #ffffff
+
+

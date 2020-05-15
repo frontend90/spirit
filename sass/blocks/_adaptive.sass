@@ -98,6 +98,15 @@
                 margin: 40px 0
               &.show 
                 display: block 
+  .footer 
+    & .footer-wrap 
+      flex-direction: column 
+      justify-content: center
+      & .block 
+        & p 
+          text-align: center
+      & .social 
+        margin-top: 20px 
 @media screen and ( max-width: 670px )
   .portfolio 
     & .portfolio-nav 
@@ -111,6 +120,22 @@
       & .card 
         width: 60%
         margin: 30px auto 0 
+  .contact 
+    & .form 
+      & form 
+        & .top-input 
+          justify-content: center
+          flex-direction: column 
+          & .block 
+            margin: auto
+            width: 90%
+          & .password-input 
+            margin-top: 15px
+        & .block 
+          max-width: 90%
+          margin: 15px auto 0 
+        & .btn 
+          text-align: center
 @media screen and ( max-width: 630px )
   .services 
     & .services-wrap 
@@ -186,3 +211,6 @@
       & .title 
         & h5 
           font-size: 25px 
+@media screen and ( max-width: 430px )
+  .testimonials 
+    height: 575px 

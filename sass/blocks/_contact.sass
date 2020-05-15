@@ -1,0 +1,99 @@
+.contact
+  padding: 80px 0 
+  & .title 
+    text-align: center
+    & h5 
+      text-transform: uppercase
+      +open_light 
+      font-weight: lighter
+      font-size: 30px 
+      position: relative
+      &::before
+        content: ''
+        position: absolute
+        left: 50%
+        transform: translateX(-50%)
+        bottom: -20px 
+        width: 60px 
+        height: 4px 
+        background: #fcac45
+      &::after
+        content: ''
+        position: absolute
+        left: 50%
+        transform: translateX(-50%)
+        bottom: -34px 
+        width: 40px 
+        height: 4px
+        background: rgba(252, 172, 69, 0.34) 
+      & strong 
+        +open_semi 
+    & p 
+      margin: 60px auto 0  
+      font-size: 85%
+      font-style: italic
+      line-height: 1.42 
+      max-width: 800px 
+  & .form 
+    margin: 30px auto 0  
+    max-width: 800px
+    & form
+      & .top-input 
+        display: flex
+        justify-content: space-between 
+        max-width: 800px 
+        & .block 
+          width: 48%
+          position: relative
+          & input 
+            border: 1px solid #cccccc 
+            width: 100%
+            padding: 6px 12px 
+            color: #555555
+            border-radius: 2px 
+            margin-top: 5px 
+        & .email-input 
+          &::before
+            content: 'Email address'
+            font-size: 12px
+            +open_reg 
+        & .password-input 
+          &::before
+            content: 'Password'
+            font-size: 12px
+            +open_reg 
+      & .block 
+        max-width: 800px 
+        margin-top: 15px 
+        position: relative
+        & textarea 
+          border: 1px solid #cccccc
+          width: 100%
+          padding: 6px 12px 
+          color: #555555
+          border-radius: 2px 
+          height: 75px 
+          margin-top: 5px 
+      & .textarea 
+        &::before
+          content: 'Message'
+          font-size: 12px 
+          +open_reg 
+      & .btn 
+        margin-top: 15px 
+        text-align: right
+        & button 
+          background: #FCAC45
+          padding: 10px 40px 
+          text-transform: uppercase
+          color: #ffffff
+          +open_reg 
+          transition: .3s linear 
+          &:hover
+            opacity: .7
+          
+
+
+
+
+
